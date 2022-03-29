@@ -1,6 +1,4 @@
-package com.game.application;
-
-import com.game.domain.Player;
+package com.game.domain;
 
 public class Game {
 
@@ -13,7 +11,7 @@ public class Game {
     }
 
     public String getWinner() {
-        if (this.player1.getTotalPoints().compareTo(player2.getTotalPoints()) > 0) {
+        if (this.player1.getScore().compareTo(player2.getScore()) > 0) {
             return player1.getName();
         }
 

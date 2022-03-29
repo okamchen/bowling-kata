@@ -1,12 +1,11 @@
 package com.game.domain;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class Player {
 
     private String name;
-    private List<FrameGame> frames = new ArrayList<>();
+    private List<FrameGame> frames = new FrameGameList();
 
     public Player(final String name) {
         this.name = name;
@@ -20,19 +19,10 @@ public class Player {
         return frame;
     }
 
-    public Integer getTotalPoints () {
+    public Integer getScore() {
         final Integer[] totalPoints = {0};
-        frames.stream().forEach(frame -> {
-            if (frame.isStrike()) {
-
-            }
-
-            if (frame.isSpare()) {
-
-            }
-
+        this.frames.stream().forEach(frame -> {
             totalPoints[0] = totalPoints[0] + frame.getTotalPins();
-
         });
 
         return totalPoints[0];
