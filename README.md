@@ -1,3 +1,6 @@
-# bowling-kata
+# Bowling Kata 🎳
 
-https://codingdojo.org/kata/Bowling/
+For more details:<br />
+https://codingdojo.org/kata/Bowling/ 
+
+To validate you can use this [site](https://www.bowlinggenius.com/) ✨
