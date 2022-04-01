@@ -1,8 +1,8 @@
 package com.game.domain;
 
-import com.game.interfaces.RulesScoreInteface;
+import com.game.interfaces.ScoringRuleInteface;
 
-public class LastScoreRules implements RulesScoreInteface {
+public class LastScoringRule implements ScoringRuleInteface {
 
     @Override
     public void buildScore(final FrameGameList frameGameList, final FrameGame actualFrameGame) {

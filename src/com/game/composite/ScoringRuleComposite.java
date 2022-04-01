@@ -2,22 +2,22 @@ package com.game.composite;
 
 import com.game.domain.FrameGame;
 import com.game.domain.FrameGameList;
-import com.game.interfaces.RulesScoreInteface;
+import com.game.interfaces.ScoringRuleInteface;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class RulesPointsFactory {
+public class ScoringRuleComposite {
 
-    private List<RulesScoreInteface> roles = new ArrayList<>();
+    private List<ScoringRuleInteface> roles = new ArrayList<>();
 
-    public RulesPointsFactory addRole(RulesScoreInteface rolesScore) {
+    public ScoringRuleComposite addRole(ScoringRuleInteface rolesScore) {
         roles.add(rolesScore);
         return this;
     }
 
     public void execute(final FrameGameList frameGameList, final FrameGame actualFrameGame) {
-        for (RulesScoreInteface role : roles) {
+        for (ScoringRuleInteface role : roles) {
             role.buildScore(frameGameList, actualFrameGame);
         }
     }
