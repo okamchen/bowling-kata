@@ -8,6 +8,7 @@ public class Main {
 
     public static void main(String[] args) {
         final Player player1 = new Player("Oelton");
+        /*
         player1.addFrame(new FrameGame().addFirstPlay(10));
         player1.addFrame(new FrameGame().addFirstPlay(10));
         player1.addFrame(new FrameGame().addFirstPlay(10));
@@ -19,6 +20,7 @@ public class Main {
         player1.addFrame(new FrameGame().addFirstPlay(10));
         player1.addFrame(new FrameGame().addFirstPlay(10));
 
+         */
         final Player player2 = new Player("Joao");
         player2.addFrame(new FrameGame().addFirstPlay(10));
         player2.addFrame(new FrameGame().addFirstPlay(8).addSecundPlay(2));
